@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calendario"
+                android:id="@+id/buttonInsertEvent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#002dff4e"
+                style="@style/Base.TextAppearance.AppCompat.Menu" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asitencia"
+                android:id="@+id/buttonInsertAttendee"
+                android:layout_below="@+id/buttonInsertEvent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                style="@style/Base.TextAppearance.AppCompat.Menu" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonInsertReminder"
+                android:text="Recordatorio"
+                style="@style/Base.TextAppearance.AppCompat.Menu"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/buttonInsertAttendee" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEGAPI"
+                android:id="@+id/Bfegapi"
+                android:layout_below="@+id/buttonInsertReminder"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para mas infromacion del Calenadrio de Regatas o  de otra visita la pagina oficial del Piragüismo gallego(www.fegapi.org)"
+                android:id="@+id/textView"
+                android:textColor="#e401010c"
+                android:layout_below="@+id/Bfegapi"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RFEP"
+                android:id="@+id/Brfep"
+                android:layout_above="@+id/textView"
+                android:layout_toRightOf="@+id/buttonInsertReminder"
+                android:layout_toEndOf="@+id/buttonInsertReminder" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si quieres saber cual de las competiciones de piragüismo gallego son nacionales.Tambien puedes consultar el regulamiento español en (ww.rfep.es)"
+                android:id="@+id/textView2"
+                android:textColor="#ff080808"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juego"
+                android:id="@+id/bjuego"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
